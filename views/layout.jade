@@ -1,0 +1,12 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body(class='app')
+    div(class='navbar navbar-fixed-top')
+      .navbar-inner
+        .container
+          a(class='brand', href='/') My Tasks
+    block content
