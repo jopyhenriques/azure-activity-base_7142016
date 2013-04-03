@@ -1,6 +1,6 @@
 {
-  "STORAGE_NAME": "community45ef2d282c44b4a",
-  "STORAGE_KEY": "yFaaP16cv8N/lzXKyKTZDuW0xvPe3kAWaOHRPYeucyyK/ZrNtt3dwspLqsnqX/QbdQwgXGKG+Rb+xN7jiuexPQ==",
+  "STORAGE_NAME": "[storage name]",
+  "STORAGE_KEY": "[storage key]",
   "PARTITION_KEY": "mytasks",
   "TABLE_NAME": "tasks"
 }
