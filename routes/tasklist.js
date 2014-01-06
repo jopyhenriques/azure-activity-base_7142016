@@ -14,8 +14,9 @@ TaskList.prototype = {
     self = this;
     var query = azure.TableQuery
       .select()
-      .from(self.task.tableName)
-      .where('completed eq ?', 'false');
+      .from(self.task.tableName);
+//      .from(self.task.tableName)
+//      .where('completed eq ?', 'false');
     self.task.find(query, function itemsFound(err, items) {
       debugger;
       res.render('index',{title: 'My ToDo List ', tasks: items});
