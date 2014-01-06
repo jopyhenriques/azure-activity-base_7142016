@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -39,6 +38,11 @@ app.configure('development', function(){
 
 var TaskList = require('./routes/tasklist');
 var Task = require('./models/task');
+console.log("accountName : " + accountName);
+console.log("accountKey  : " + accountKey);
+console.log("tableName   : " + tableName);
+console.log("partitionKey: " + partitionKey);
+
 var task = new Task(
     azure.createTableService(accountName, accountKey)
   , tableName
