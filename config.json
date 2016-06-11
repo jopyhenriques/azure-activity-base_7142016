@@ -1,6 +1,0 @@
-{
-  "STORAGE_NAME": "[storage name]",
-  "STORAGE_KEY": "[storage key]",
-  "PARTITION_KEY": "mytasks",
-  "TABLE_NAME": "tasks"
-}
