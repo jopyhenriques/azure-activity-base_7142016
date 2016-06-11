@@ -9,13 +9,13 @@ var express = require('express')
   , path = require('path');
 
 var azure = require('azure')
-  , nconf = require('nconf');
-nconf.env()
-     .file({ file: 'config.json'});
-var tableName = nconf.get("TABLE_NAME")
-  , partitionKey = nconf.get("PARTITION_KEY")
-  , accountName = nconf.get("STORAGE_NAME")
-  , accountKey = nconf.get("STORAGE_KEY");
+//  , nconf = require('nconf');
+//nconf.env()
+//     .file({ file: 'config.json'});
+var tableName = "tasks"
+  , partitionKey = "mytasks"
+  , accountName = process.env.WEBSITE_STORAGE_NAME
+  , accountKey = process.env.WEBSITE_STORAGE_KEY;
   
 var app = express();
 
