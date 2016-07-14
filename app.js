@@ -8,14 +8,20 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
+var value = process.env.CUSTOMCONNSTR_connstring;
+
+var str = value.split(";")
+var AccountName = str[1].split("=")[1];
+var AccountKey = str[2].split("=")[1]+"==";
+
 var azure = require('azure')
-//  , nconf = require('nconf');
-//nconf.env()
-//     .file({ file: 'config.json'});
+  , nconf = require('nconf');
+nconf.env()
+     .file({ file: 'config.json'});
 var tableName = "tasks"
   , partitionKey = "mytasks"
-  , accountName = process.env.WEBSITE_STORAGE_NAME
-  , accountKey = process.env.WEBSITE_STORAGE_KEY;
+  , accountName = AccountName
+  , accountKey = AccountKey;
   
 var app = express();
 
