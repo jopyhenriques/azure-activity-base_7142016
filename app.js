@@ -8,7 +8,7 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
-var value = process.env.CUSTOMCONNSTR_connstring;
+var value = process.env.CUSTOMCONNSTR_MS_AzureStorageAccountConnectionString;
 
 var str = value.split(";")
 var AccountName = str[1].split("=")[1];
