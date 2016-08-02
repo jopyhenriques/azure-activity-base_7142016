@@ -13,5 +13,5 @@
     "nconf": "~0.6.7",
     "azure": "~0.7.8"
   },
-"engines":{"node.js": "0.8.19"} 
+"engines":{"node.js": "0.8.3"} 
 }
